@@ -1,0 +1,455 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+header {
+    background: url("images/desktop/image-header.jpg") no-repeat;
+    position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 30px;
+}
+
+nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 30px;
+    margin-left: 80px
+}
+
+.cont{
+   display: flex;
+   flex-flow: wrap;
+   gap: 30px;
+   color: white; 
+   margin-right: 150px; 
+
+}
+
+.list {
+    font-size: 24px;
+}
+
+.list:hover{
+    background: white;
+    border-radius: 30px;
+    width: 120px;
+    height: 30px;
+    text-align:center;
+    color:black;
+    cursor: pointer;
+}
+
+.title{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 4rem;
+    color: white;
+}
+
+.arrow {
+    position: relative;
+    top: 18%;
+    right: -47%;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat( 2, 1fr );
+    grid-template-rows: repeat(3, 1fr);
+    gap:0;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 100%;
+    height: 50vw;
+    margin:0;
+    padding: 0;
+}
+
+.card.brand {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: -100px;
+}
+
+.card.brand p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    line-height: 1.8rem;
+    color: hsl(210, 4%, 67%);
+}
+
+.item1 h3 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+}
+
+.egg {
+    background: url('images/desktop/image-transform.jpg') no-repeat;
+    background-size: contain;
+}
+
+.cup {
+    background: url('images/desktop/image-stand-out.jpg') no-repeat;
+    background-size: contain;
+    margin-top: -166px;
+}
+
+.audience {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+   }
+
+ .item2 {
+    margin-bottom: 2rem;
+ }
+
+ .item2 p {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    line-height: 2.5rem;
+    color: hsl(210, 4%, 67%);
+    
+ }
+
+ .item2 h3 {
+    margin-top: 30px;
+    margin-bottom: 420px;
+    font-size: 1.5rem;
+ }
+
+ .card.cherry {
+    background: url('images/desktop/image-graphic-design.jpg') no-repeat;
+    background-size: contain;
+    margin-top: -333px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .item3 {
+    margin-top: 500px; 
+ }
+
+ .item3 h3 {
+   font-size: 2rem;
+   color: hsl(177, 63%, 21%);
+ }
+
+ .item3 p {
+     font-size: 1.4rem;
+     line-height: 2rem;
+     margin-top: 30px;
+     color:hsl(168, 34%, 41%);
+ }
+
+ .orange {
+    background: url('images/desktop/image-photography.jpg') no-repeat;
+    background-size:contain;
+    margin-top: -333px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .item4 {
+    margin-top: 500px; 
+    text-align:center;
+ }
+
+ .item4 h3 {
+    font-size: 2rem;
+    color: hsl(192, 85%, 15%);
+  }
+ 
+
+.item4 p {
+     font-size: 1.4rem;
+     line-height: 2rem;
+     margin-top: 30px;
+     color:hsl(193, 82%, 7%);
+}
+
+.testimonials {
+    height: 30vw;
+    display: grid;
+    place-items: center;
+    margin-top: -332px;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: -170px;
+}
+
+.subject {
+    text-align: center;
+    margin-bottom: 50px;
+    color:hsl(210, 4%, 67%);
+}
+
+.persons {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.person {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.person img {
+    width:  20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-top: -40px;
+}
+
+.person p {
+    font-size: 16px;
+    line-height: 1.4rem;
+    margin-top: 20px;
+}
+
+.role {
+    margin-top: 50px;
+}
+
+.role p {
+    margin-top: 0px;
+    color: hsl(210, 4%, 67%);
+}
+
+.imgs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.imgs img{
+    width: 25%;
+    height: 40%;
+}
+
+footer {
+    background: hsl(168, 34%, 41%);
+    height: 45%;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sytles{
+    fill: hsl(167, 40%, 24%);
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.svg1 {
+    margin-left: 80px
+}
+
+.contain {
+    margin-top: -130px
+}
+
+.ul {
+    width: 300px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color:    hsl(177, 63%, 21%);
+}
+
+.social {
+    margin-top: 80px;
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 30px;
+}
+
+.icon {
+    margin-left: 30px;
+}
+
+@media (max-width: 1920px) and (min-width: 768px) {
+    
+}
+
+
+
+
+/* - Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(198, 62%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)
+- White: hsl(0, 0%, 100%) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
