@@ -46,15 +46,15 @@
 body {
     box-sizing: border-box;
     overflow-x: hidden;
+    width: 100vw;
     height: 100vh;
 }
 
 header {
-    background: url("images/desktop/image-header.jpg") no-repeat;
-    position: center;
-    background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height:100vh;
+    background: url("images/desktop/image-header.jpg") no-repeat;
+    background-size: cover;
     padding: 30px;
 }
 
@@ -147,12 +147,13 @@ nav {
 .egg {
     background: url('images/desktop/image-transform.jpg') no-repeat;
     background-size: contain;
+   
 }
 
 .cup {
     background: url('images/desktop/image-stand-out.jpg') no-repeat;
     background-size: contain;
-    margin-top: -166px;
+    margin-top: -160px;
 }
 
 .audience {
@@ -313,7 +314,6 @@ footer {
 }
 
 .sytles{
-    fill: hsl(167, 40%, 24%);
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -331,20 +331,43 @@ footer {
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
-    margin-top: 40px;
+    margin-top: 10px;
     font-size: 1.5rem;
     color:    hsl(177, 63%, 21%);
 }
 
+.more1:hover {
+    text-decoration: underline yellow 10px;
+    cursor: pointer;
+}
+
+.more2:hover {
+    text-decoration: underline red 10px;
+    cursor: pointer;
+}
+
+.about:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.sunny{
+    filter:brightness(0) saturate(100%) invert(26%) sepia(41%) saturate(476%) hue-rotate(116deg) brightness(97%) contrast(94%);
+}
+
 .social {
     margin-top: 80px;
-    display: flex;
+    display: flex; 
     flex-flow: wrap;
     margin-left: 30px;
 }
 
 .icon {
     margin-left: 30px;
+}
+
+.icon:hover {
+    filter:  brightness(0) invert(1);
 }
 
 @media (max-width: 1920px) and (min-width: 768px) {
