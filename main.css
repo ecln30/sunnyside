@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 6b4f1e43e375adc00c27534de7d4d4c75d4047d4
 * {
     margin:0;
     padding:0;
-    border-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
     overflow-x: hidden;
