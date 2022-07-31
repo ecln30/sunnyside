@@ -1,0 +1,482 @@
+@media (max-width: 390px) {
+
+
+    header {
+        background: url('images/mobile/image-header.jpg') no-repeat;
+        background-size: 100%;
+    }
+
+    .menubar:hover {
+        filter: brightness(0) saturate(100%) invert(91%) sepia(55%) saturate(3%) hue-rotate(247deg) brightness(100%) contrast(105%);
+    }
+
+    .menubar:active {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7480%) hue-rotate(5deg) brightness(93%) contrast(104%);
+    }
+
+    .cont {
+        left: 10%;
+    }
+
+    .list {
+        width: 130px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .show {
+        top: 9%;
+        right: 13%;
+        border-radius: 20px;
+    }
+
+    .title {
+        margin-top: -7%;
+        font-size: 2.8rem;
+    }
+
+    .arrow {
+       top: 36%; 
+       right: 46%;
+    }
+    
+   .hide {
+     display:none
+   }
+
+   .cards{
+     position: absolute;
+     top: 65%;
+     display: flex;
+     flex-direction: column;
+     margin: 0;
+     padding: 0;
+   }
+
+  .card.egg {
+     order: 1;
+     height: 100vh;
+     background: url('images/mobile/image-transform.jpg') no-repeat;
+     background-size: 100%;
+   }
+
+  .card.brand {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+  } 
+  
+  .item1 {
+     height: 100vh;
+     margin-top: -95%;
+     padding: 20px;
+  }
+  .brand h1 {
+     font-size: 2.2rem;
+     text-align:center;
+  }
+
+  .card.brand p {
+    font-size: 1.1rem;
+    color: hsl(240, 10%, 38%);
+    text-align: center;
+    line-height: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.bar {
+    display:none;
+}
+
+.item1 h3 {
+    text-decoration: underline yellow 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align:center;
+}
+
+
+  .card.cup {
+     order:3;
+     width: 100%;
+     height: 100vh;
+     background: url('images/mobile/image-stand-out.jpg') no-repeat;
+     background-size: 100%;
+     margin-top: -166px;
+  }
+  .card.audience{
+    order: 4;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+  }
+  .card.cherry{
+     order: 5;
+     width: 100%;
+     background: url('images/mobile/image-graphic-design.jpg') no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card.orange {
+    order: 6;
+    width: 100%;
+    background: url('images/desktop/image-photography.jpg') no-repeat;
+    background-size:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+ .item2 h1 {
+     font-size: 30px;
+ }
+
+ .item2 p {
+    color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    
+ }
+
+ .item2 h3 {
+    text-decoration: underline red 10px;
+    cursor:pointer
+ }
+
+
+ .item3 {
+
+ }
+
+ .item3 h3 {
+   font-size: 2rem;
+   color: hsl(177, 63%, 21%);
+ }
+
+ .item3 p {
+     font-size: 1.4rem;
+     line-height: 2rem;
+     color:hsl(168, 34%, 41%);
+ }
+
+ .item4 {
+    text-align:center;
+ }
+
+ .item4 h3 {
+    font-size: 2rem;
+    color: hsl(192, 85%, 15%);
+  }
+ 
+
+.item4 p {
+     font-size: 1.4rem;
+     line-height: 2rem;
+     color:hsl(193, 82%, 7%);
+}
+
+.underline1:hover {
+    text-decoration: underline yellow 10px;
+    cursor: pointer;
+}
+
+.underline2:hover {
+    text-decoration: underline red 10px;
+    cursor: pointer;
+}
+
+
+.testimonials {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 400%;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.container {
+     width: 100%;
+     height: 100vh;
+    display: flex;
+    flex-flow: column;
+   
+}
+
+.subject {
+    text-align: center;
+    color:hsl(210, 4%, 67%);
+}
+
+.persons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.person {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.person img {
+    width:  23%;
+    height: 30%;
+    border-radius: 50%;
+}
+
+.person p {
+    font-size: 16px;
+    line-height: 1.4rem;
+}
+
+.role {
+    
+}
+
+.role p {
+    margin-top: 0px;
+    color: hsl(210, 4%, 67%);
+}
+
+.imgs {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 0;
+    position: absolute;
+    top: 360%;
+}
+img#milk {
+    width: 50%;
+    content:url(images/mobile/image-gallery-milkbottles.jpg);
+}
+img#orange {
+    width: 50%;
+    content:url(images/mobile/image-gallery-orange.jpg);
+}
+img#cone {
+    width: 50%;
+    content:url(images/mobile/image-gallery-cone.jpg);
+}
+img#suger {
+    width: 50%;
+    content:url(images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+
+footer {
+    width: 100vw;
+    height: 44vh;
+    position: absolute;
+    top: 406%;
+    background: hsl(169, 42%, 66%);
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.svg1 {
+    width: 50vw;
+    height: 5vh;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: -15%;
+}
+
+.contain {
+    width: 100%;
+    margin: 10px;
+}
+
+.ul {
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+    color: hsl(180, 29%, 34%);
+}
+
+.ul.about {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.sunny{
+    filter:brightness(0) saturate(100%) invert(26%) sepia(41%) saturate(476%) hue-rotate(116deg) brightness(97%) contrast(94%);
+}
+
+.social {
+    width: 78%;
+    display: flex; 
+    justify-content: center;
+}
+
+.icon {
+    margin-left: 30px;
+}
+
+.icon:hover {
+    filter:  brightness(0) invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

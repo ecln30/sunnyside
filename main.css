@@ -1,61 +1,27 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: boder-box;
 }
 
 body {
-    box-sizing: border-box;
     overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 header {
     width: 100vw;
-    height:100vh;
+    min-height:100vh;
     background: url("images/desktop/image-header.jpg") no-repeat;
-    background-size: cover;
-    padding: 30px;
+    background-size: 100%;
+}
+
+.hamburger {
+    display: none;
 }
 
 nav {
@@ -63,6 +29,8 @@ nav {
     height: 50px;
     display: flex;
     justify-content: space-between;
+    align-items:center;
+    padding: 3em;
 }
 
 .logo {
@@ -73,23 +41,27 @@ nav {
 .cont{
    display: flex;
    flex-flow: wrap;
-   gap: 30px;
+   gap: 10px;
    color: white; 
    margin-right: 150px; 
-
 }
 
 .list {
-    font-size: 24px;
+    width: 120px;
+    height: 32px;
+    text-align:center;
+    font-family: 'Barlow', sans-serif;
+    font-size: 25px;
+    padding: 15px;
+    transition: all 0.25 ease
 }
 
 .list:hover{
+
     background: white;
     border-radius: 30px;
-    width: 120px;
-    height: 30px;
-    text-align:center;
     color:black;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -98,18 +70,21 @@ nav {
     margin-top: 10%;
     font-size: 4rem;
     color: white;
+    letter-spacing: 6px;
+    margin-top: 10vh;
+    font-family: 'Fraunces', serif;
 }
 
 .arrow {
-    position: relative;
-    top: 18%;
-    right: -47%;
+    position: absolute;
+    top: 50%;
+    right: 49%;
 }
 
 .cards {
     width: 100%;
     display: grid;
-    grid-template-columns:repeat( 2, 1fr );
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap:0;
     margin: 0;
@@ -128,6 +103,7 @@ nav {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    font-family: 'Fraunces', serif;
     font-size: 2.5rem;
     margin-top: -100px;
 }
@@ -135,37 +111,41 @@ nav {
 .card.brand p {
     font-size: 1.5rem;
     margin-top: 20px;
-    line-height: 1.8rem;
+    line-height: 2.5rem;
     color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
 
 .item1 h3 {
     margin-top: 40px;
     font-size: 1.5rem;
+    text-decoration: underline yellow 10px;
+    cursor: pointer;
 }
-
-.egg {
+.egg{
     background: url('images/desktop/image-transform.jpg') no-repeat;
-    background-size: contain;
-   
+    background-size: 100%;
 }
 
 .cup {
     background: url('images/desktop/image-stand-out.jpg') no-repeat;
-    background-size: contain;
-    margin-top: -160px;
+    background-size: 100%;
+    margin-top: -166px;
 }
 
-.audience {
+.card.audience {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    font-family: 'Fraunces', serif;
     font-size: 2.5rem;
    }
 
  .item2 {
     margin-bottom: 2rem;
+    margin-top: -50px;
  }
 
  .item2 p {
@@ -174,6 +154,8 @@ nav {
     margin-top: 20px;
     line-height: 2.5rem;
     color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
     
  }
 
@@ -181,7 +163,10 @@ nav {
     margin-top: 30px;
     margin-bottom: 420px;
     font-size: 1.5rem;
+    text-decoration: underline red 10px;
+    cursor:pointer
  }
+
 
  .card.cherry {
     background: url('images/desktop/image-graphic-design.jpg') no-repeat;
@@ -271,8 +256,8 @@ nav {
 }
 
 .person img {
-    width:  20%;
-    height: 20%;
+    width:  23%;
+    height: 30%;
     border-radius: 50%;
     margin-top: -40px;
 }
@@ -305,7 +290,7 @@ nav {
 
 footer {
     background: hsl(168, 34%, 41%);
-    height: 45%;
+    height: 25vw;
     display:flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -333,15 +318,15 @@ footer {
     justify-content: space-evenly;
     margin-top: 10px;
     font-size: 1.5rem;
-    color:    hsl(177, 63%, 21%);
+    color:hsl(177, 63%, 21%);
 }
 
-.more1:hover {
+.underline1:hover {
     text-decoration: underline yellow 10px;
     cursor: pointer;
 }
 
-.more2:hover {
+.underline2:hover {
     text-decoration: underline red 10px;
     cursor: pointer;
 }
@@ -369,31 +354,6 @@ footer {
 .icon:hover {
     filter:  brightness(0) invert(1);
 }
-
-@media (max-width: 1920px) and (min-width: 768px) {
-    
-}
-
-
-
-
-/* - Soft red: hsl(7, 99%, 70%)
-- Yellow: hsl(51, 100%, 49%)
-- Dark desaturated cyan (graphic design text): hsl(198, 62%, 24%)
-- Dark blue (photography text): hsl(198, 62%, 26%)
-- Dark moderate cyan (footer): hsl(168, 34%, 41%)
-
-### Neutral
-
-- Very dark desaturated blue: hsl(212, 27%, 19%)
-- Very dark grayish blue: hsl(213, 9%, 39%)
-- Dark grayish blue: hsl(232, 10%, 55%)
-- Grayish blue: hsl(210, 4%, 67%)
-- White: hsl(0, 0%, 100%) */
-
-
-
-
 
 
 
